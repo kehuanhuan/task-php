@@ -1,5 +1,7 @@
 <?php
 
+
+require_once 'config.php';
 require_once 'exception_handle.php';
 require_once 'autoload.php';
 
