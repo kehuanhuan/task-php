@@ -6,18 +6,27 @@ require_once 'exception_handle.php';
 require_once 'autoload.php';
 
 function task1() {
-    for ($i = 1; $i <= 10; ++$i) {
+    $i = 0;
+    while ($i <= 10) {
+        // sleep(1);
         echo "This is task 1 iteration $i.\n";
         yield;
+        $i++;
     }
+
 }
 
 function task2() {
-    for ($i = 1; $i <= 5; ++$i) {
+    $i = 0;
+    while ($i <= 5) {
+        // sleep(1);
         echo "This is task 2 iteration $i.\n";
+        // var_export(2);
         yield;
+        $i++;
     }
 }
+
 
 $scheduler = new Scheduler;
 
